@@ -54,7 +54,8 @@ dependencies {
             app:sparkbutton_inActiveImage="@drawable/inactive_image"
             app:sparkbutton_iconSize="40dp"
             app:sparkbutton_primaryColor="@color/primary_color"
-            app:sparkbutton_secondaryColor="@color/secondary_color" />
+            app:sparkbutton_secondaryColor="@color/secondary_color"
+				      />
 ```
 
 ### Java
@@ -65,8 +66,7 @@ SparkButton button  = new SparkButtonBuilder(context)
                 .setInActiveImage(R.drawable.inactive_image)
                 .setDisabledImage(R.drawable.disabled_image)
                 .setImageSizePx(getResources().getDimensionPixelOffset(R.dimen.button_size))
-                .setPrimaryColor(ContextCompat.getColor(context, R.color.primary_color))
-                .setSecondaryColor(ContextCompat.getColor(context, R.color.secondary_color))
+               
                 .build();
 ```
 
